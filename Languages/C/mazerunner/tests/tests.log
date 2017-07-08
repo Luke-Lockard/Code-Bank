@@ -1,0 +1,173 @@
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+[ERROR] (tests/mazer_tests.c:36: errno: None) Function AtDestination returned 0 
+[ERROR] (tests/mazer_tests.c:89: errno: None) AtDestination failed.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+[ERROR] (tests/mazer_tests.c:36: errno: None) Function AtDestination returned 0 
+[ERROR] (tests/mazer_tests.c:89: errno: None) AtDestination failed.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+[ERROR] (tests/mazer_tests.c:36: errno: None) Function AtDestination returned 0 
+[ERROR] (tests/mazer_tests.c:89: errno: None) AtDestination failed.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+[ERROR] (src/mazer.c:79: errno: None) Init Warning: maze is not defined.
+[ERROR] (tests/mazer_tests.c:36: errno: None) Function IsWall returned 0 
+[ERROR] (tests/mazer_tests.c:119: errno: None) IsWall should fail with no grid.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+[ERROR] (src/mazer.c:79: errno: None) Init Warning: maze is not defined.
+[ERROR] (tests/mazer_tests.c:36: errno: None) Function IsWall returned 0 
+[ERROR] (tests/mazer_tests.c:119: errno: None) IsWall should fail with no grid.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+[ERROR] (src/mazer.c:79: errno: None) IsWall Warning: maze is not defined.
+[ERROR] (tests/mazer_tests.c:36: errno: None) Function IsWall returned 0 
+[ERROR] (tests/mazer_tests.c:119: errno: None) IsWall should fail with no grid.
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+[ERROR] (src/mazer.c:79: errno: None) IsWall Warning: maze is not defined.
+[ERROR] (src/mazer.c:114: errno: None) MoveForward Warning: maze is not defined.
+[ERROR] (src/mazer.c:154: errno: None) AtDest Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:154: 
+----- test_dlclose
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+[ERROR] (src/mazer.c:79: errno: None) IsWall Warning: maze is not defined.
+[ERROR] (src/mazer.c:114: errno: None) MoveForward Warning: maze is not defined.
+[ERROR] (src/mazer.c:154: errno: None) AtDest Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:154: 
+----- test_dlclose
+DEBUG tests/mazer_tests.c:160: ----- RUNNING: ./tests/mazer_tests
+DEBUG tests/mazer_tests.c:151: 
+----- test_dlopen
+DEBUG tests/mazer_tests.c:152: 
+----- test_functions
+DEBUG tests/mazer_tests.c:153: 
+----- test_failures
+[ERROR] (src/mazer.c:11: errno: None) Init Warning: maze is not defined.
+[ERROR] (src/mazer.c:79: errno: None) IsWall Warning: maze is not defined.
+[ERROR] (src/mazer.c:114: errno: None) MoveForward Warning: maze is not defined.
+[ERROR] (src/mazer.c:154: errno: None) AtDest Warning: maze is not defined.
+DEBUG tests/mazer_tests.c:154: 
+----- test_dlclose

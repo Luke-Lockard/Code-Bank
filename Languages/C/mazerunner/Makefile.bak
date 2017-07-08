@@ -1,0 +1,65 @@
+CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+LIBS=-ldl $(OPTLIBS)
+PREFIX?=/usr/local
+
+SOURCES=$(wildcard src/**/*.c src/maze.c)
+OBJECTS=$(patsubst %.c, %.o, $(SOURCES))
+ESOURCE=src/mazerunner.c
+EOBJECT=src/mazerunner.o
+
+TEST_SRC=$(wildcard tests/*_tests.c)
+TESTS=$(patsubst %.c, %, $(TEST_SRC))
+
+TARGET=bin/mazerunner
+LIB_TARGET=build/maze.a
+SO_TARGET=$(patsubst %.a, %.so, $(LIB_TARGET))
+
+# The Target Build
+all: $(LIB_TARGET) $(SO_TARGET) exec tests
+
+dev: CFLAGS=-g -Wall -Isrc -Wextra $(OPTFLAGS)
+dev: all
+
+$(LIB_TARGET): CFLAGS += -fPIC
+$(LIB_TARGET): build $(OBJECTS)
+	ar rcs $@ $(OBJECTS)
+	ranlib $@
+
+$(SO_TARGET): $(LIB_TARGET) $(OBJECTS)
+	$(CC) -shared -o $@ $(OBJECTS)
+
+$(TARGET): $(SO_TARGET) $(EOBJECT)
+	$(CC) -o $@ $(EOBJECT) $(SO_TARGET)
+
+build:
+	@mkdir -p build
+	@mkdir -p bin
+
+# The Executable
+.PHONY: exec
+exec: CFLAGS += $(LIBS) $(LIB_TARGET)
+exec: $(TARGET)
+
+# The Unit Tests
+.PHONY: tests
+tests: CFLAGS += $(LIBS) $(LIB_TARGET)
+tests: $(TESTS)
+	sh ./tests/runtests.sh
+
+# The Cleaner
+clean:
+	rm -rf build bin $(OBJECTS) $(TESTS)
+	rm -f tests/tests.log
+	find . -name "*.gc*" -exec rm {} \;
+	rm -rf 'find . -name "*.dSYM" -print'
+
+# The Install
+install:
+	install -d $(DESTDIR)/$(PREFIX)/lib/
+	install $(TARGET) $(DESTDIR)/$(PREFIX)/lib
+
+# The Checker
+check:
+	@echo Files with potentially dangerous functions.
+	@grep "[^_.>a-zA-Z0-9](str(n?cpy|n?cat|xfrm|n?dup|str|pbrk|tok|_)\
+		|stpn?cpy|a?sn?printf|byte_)" $(SOURCES) || true
